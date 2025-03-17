@@ -1,0 +1,4 @@
+sudo apt install nvidia-cudnn
+netsh advfirewall firewall add rule name= "Open Port 3000" dir=in action=allow protocol=TCP localport=3000
+netsh interface portproxy add v4tov4 listenport=1324 listenaddress=0.0.0.0 connectport=1324 connectaddress=172.20.234.190
+
